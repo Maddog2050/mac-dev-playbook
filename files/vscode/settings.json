@@ -1,0 +1,16 @@
+{
+    "editor.bracketPairColorization.enabled": true,
+    "editor.experimental.stickyScroll.enabled": true,
+    "git.autofetch": true,
+    "http.proxyStrictSSL": false,
+    "redhat.telemetry.enabled": false,
+    "tabnine.experimentalAutoImports": true,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.rightClickBehavior": "paste",
+    "terminal.integrated.scrollback": 99999,
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.iconTheme": "vscode-icons",
+    "vs-kubernetes": {
+        "vs-kubernetes.crd-code-completion": "enabled"
+    }
+}

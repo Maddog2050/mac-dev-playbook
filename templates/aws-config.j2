@@ -1,0 +1,13 @@
+{% for aws_account in aws_accounts %}
+[profile {{ aws_account.profile_name }}]
+sso_start_url = {{ aws_sso_start_url }}
+sso_region = {{ aws_sso_region }}
+sso_account_id = {{ aws_account.account_id }}
+sso_role_name = {{ aws_account.role_name }}
+region = {{ aws_region | default('eu-west-1', true) }}
+output = json
+
+[profile {{ aws_account.profile_name }}-awsvault]
+credential_process = aws-vault exec {{ aws_account.profile_name }} --json
+
+{% endfor %}

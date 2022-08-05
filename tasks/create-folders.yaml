@@ -1,0 +1,10 @@
+---
+- name: Create folders
+  ansible.builtin.file:
+    path: "{{ item.name | default(item) }}"
+    mode: "{{ item.mode | default('0750') }}"
+    owner: "{{ item.owner | default(ansible_user_id) }}"
+    group: "{{ item.group | default(ansible_user_gid) }}"
+    state: directory
+  with_items:
+    - "{{ create_folders }}"

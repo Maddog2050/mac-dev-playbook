@@ -1,0 +1,14 @@
+{
+  "credsStore" : "osxkeychain",
+  "auths" : {
+
+  },
+  "credHelpers": {
+{% for aws_account in aws_accounts %}
+    "{{ aws_account.account_id }}.dkr.ecr.{{ aws_region | default('eu-west-1', true) }}.amazonaws.com": "ecr-login"{% if not loop.last %},
+{% else %}
+
+{% endif %}
+{% endfor %}
+  }
+}

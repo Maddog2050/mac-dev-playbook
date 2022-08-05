@@ -1,0 +1,7 @@
+---
+- name: Add Helm repos
+  kubernetes.core.helm_repository:
+    name: "{{ item.name }}"
+    repo_url: "{{ item.repo_url }}"
+  with_items:
+    - "{{ helm_repos }}"

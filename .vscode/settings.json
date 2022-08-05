@@ -1,0 +1,30 @@
+{
+    "[ansible]": {
+        "editor.tabSize": 2
+    },
+    "[ansible-jinja]": {
+        "editor.tabSize": 2
+    },
+    "[yaml]": {
+        "editor.tabSize": 2
+    },
+    "yaml.format.enable": false,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.formatOnSave": true,
+    "files.associations": {
+        "*.yml": "ansible",
+        "*.yaml": "ansible",
+        "*.j2": "ansible-jinja"
+    },
+    "cSpell.language": "en-GB,en-US",
+    "cSpell.enableFiletypes": [
+        "ansible",
+        "ansible-jinja",
+        "jinja"
+    ],
+    "cSpell.allowCompoundWords": true,
+    "cSpell.words": [
+        "geerlingguy",
+        "Kubernetes"
+    ]
+}
