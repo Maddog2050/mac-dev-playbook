@@ -160,6 +160,7 @@ homebrew_cask_apps:
   # - name: wine-crossover
   #  install_options: 'no-quarantine,appdir={{ homebrew_cask_appdir }}'
 
+mas_upgrade_all_apps: yes
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
   - name: 1Password for Safari  (2.3.7)
@@ -176,6 +177,12 @@ pip_packages:
   - name: molecule
     state: latest
   - name: molecule-docker
+    state: latest
+  - name: flake8
+    state: latest
+  - name: pep8-naming
+    state: latest
+  - name: black
     state: latest
   # - name: molecule-vagrant
   #   state: latest
