@@ -145,6 +145,7 @@ homebrew_cask_apps:
   - visual-studio-code
   - 1password
   - parallels
+  - parallels-toolbox
   - forticlient-vpn
   # - wireshark
   # - rancher
