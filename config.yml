@@ -60,10 +60,11 @@ dotfiles_files:
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
-  - gcenx/wine
+  # - gcenx/wine
   - aws/tap
   - fluxcd/tap
   - buildpacks/tap
+  - kubescape/tap
 
 homebrew_installed_packages:
   - autoconf
@@ -83,6 +84,7 @@ homebrew_installed_packages:
   # My Additions
   - aws-vault
   - awscli
+  - docker-credential-helper
   - docker-credential-helper-ecr
   - eksctl
   - git-remote-codecommit
@@ -108,7 +110,7 @@ homebrew_installed_packages:
   - terrascan
   # - aws-sam-cli
   - act
-  - kubescape
+  - kubescape-cli
   # - talosctl # Not in homebrew
   - nvm
   # - gvm # Not in homebrew
@@ -132,6 +134,7 @@ homebrew_cask_apps:
   # - google-chrome
   # - transmit
   # - vagrant
+  - sublime-text
   # My Additions
   - brave-browser
   - dbeaver-community
@@ -179,14 +182,28 @@ pip_packages:
     state: latest
   - name: molecule-docker
     state: latest
-  - name: flake8
-    state: latest
-  - name: pep8-naming
-    state: latest
-  - name: black
-    state: latest
   # - name: molecule-vagrant
   #   state: latest
+  - name: flake8  # Python Styting
+    state: latest
+  - name: pep8-naming  # Python PEP8 naming
+    state: latest
+  - name: black  # Python Styting
+    state: latest
+  - name: passlib  # Ansible password_hash (osx only)
+    state: latest
+  - name: PyVmomi  # Ansible VMware
+    state: latest
+  - name: nimble-sdk  # Ansible Nimble
+    state: latest
+  - name: dnspython  # Ansible Dig
+    state: latest
+  - name: pypsrp  # Ansible psrp
+    state: latest
+  - name: gssapi  # Ansible psrp
+    state: latest
+  - name: krb5  # Ansible psrp
+    state: latest
 
 vscode_install_extensions:
   - aaron-bond.better-comments
