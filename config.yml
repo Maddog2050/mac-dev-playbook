@@ -68,7 +68,7 @@ homebrew_taps:
 
 homebrew_installed_packages:
   - autoconf
-  - bash-completion
+  # - bash-completion
   - git
   - httpie
   - iperf
@@ -126,6 +126,9 @@ homebrew_installed_packages:
   - pyenv
   - pyenv-virtualenv
   - pyenv-pip-migrate
+  - gnu-sed
+  - grep
+  - tfk8s
 
 homebrew_upgrade_all_packages: true
 homebrew_cask_apps:
@@ -204,6 +207,8 @@ pip_packages:
     state: latest
   - name: krb5  # Ansible psrp
     state: latest
+  - name: netaddr  # Ansible kubespray
+    state: latest
 
 vscode_install_extensions:
   - aaron-bond.better-comments
@@ -224,7 +229,7 @@ vscode_install_extensions:
   - ms-vscode-remote.remote-ssh
   # - ms-vscode-remote.remote-wsl
   # - ms-vsliveshare.vsliveshare
-  - redhat.ansible@0.11.29
+  - redhat.ansible
   - redhat.vscode-yaml
   - rubymaniac.vscode-paste-and-indent
   - sebastianbille.iam-legend
