@@ -1,6 +1,6 @@
 {
     "editor.bracketPairColorization.enabled": true,
-    "editor.experimental.stickyScroll.enabled": true,
+    "editor.stickyScroll.enabled": true,
     "git.autofetch": true,
     "http.proxyStrictSSL": false,
     "python.formatting.provider": "black",
